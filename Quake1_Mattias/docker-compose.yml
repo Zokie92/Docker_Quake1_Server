@@ -5,7 +5,6 @@ services:
     image: moisesber/quaken:latest
     container_name: quake_server
     ports:
-      - "26000:26000"
       - "26000:26000/udp"
     volumes:
       - ./quake_data:/nquakesv/id1     # Mounta din id1 mapp till det som imagen förväntar sig
