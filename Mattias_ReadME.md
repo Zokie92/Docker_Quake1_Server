@@ -85,3 +85,54 @@ map e1m1
 sv_maxclients 8
 
 3.3 Starta server
+docker-compose up -d
+docker exec -it quake_server /bin/sh
+cd /nquakesv
+./quake_server -basedir /nquakesv -config server.cfg
+
+4. Klient Setup
+	1.	Ladda ner DarkPlaces 3504 för Mac.
+	2.	Placera .app i t.ex. ~/Documents/.
+	3.	Se till att pak-filer ligger i ~/Documents/Quake/id1/.
+	4.	Starta klienten:
+    ~/Documents/DarkPlaces.app/Contents/MacOS/darkplaces-sdl -basedir ~/Documents/Quake
+
+	5.	Anslut till servern:
+    connect 127.0.0.1:26000
+
+
+    5. Multiplayer Tips
+	•	Kontrollera att port 26000 UDP är öppen i firewall/router.
+	•	Lägg till fler kartor i quake_data/maps/.
+	•	Testa med korta kartor först innan större banor läggs till.
+	•	Max antal klienter styrs av sv_maxclients i server.cfg.
+
+⸻
+
+6. Felsökningslogg
+Datum
+Problem
+Lösning
+2025-11-19
+DarkPlaces kunde inte hitta pak0.pak
+Lade pak-filer i ~/Documents/Quake/id1/ och använde -basedir
+2025-11-19
+Klienten host_error version mismatch
+Bytte klient till DarkPlaces 3504
+2025-11-19
+Docker M1 plattformsproblem
+La till platform: linux/amd64 i compose
+2025-11-19
+No configuration file
+Navigerade till rätt katalog innan docker-compose up
+
+7. Tidslinje
+	•	Start: ca 2025-11-18
+	•	Test och felsökning klient/server: 2025-11-19
+	•	Docker setup och port mapping: 2025-11-19
+	•	Multiplayer anslutning testad: 2025-11-19
+Tidsåtgång:
+- Totalt ca 8 timmar, inklusive felsökning och testning.
+
+
+    https://www.macsourceports.com/game/quake
