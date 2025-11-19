@@ -6,7 +6,7 @@ services:
     ports:
       - "26000:26000/udp"
     volumes:
-      - ./quake_data:/qw-mount           # Must have: id1, pak-filer, server.cfg, maps, mods
+      - ./quake_data:/qw           # Must have: id1, pak-filer, server.cfg, maps, mods
     restart: unless-stopped
 
   wireguard:
