@@ -1,12 +1,10 @@
-version: '3'
-
+version: "3"
 services:
-  quake1:
-    image: gazliddon/qs
-    container_name: quake1_server
+  quakeworld:
+    image: zobees/quakeworld:latest
+    container_name: quakeworld_server
     ports:
-      - '27510:27510/udp'
-      - '27511:27511/tcp'
+      - "27500:27500/udp"  # Standard QuakeWorld port
     volumes:
-      - ./id1:/id1
+      - ./id1:/id1         # Montera din id1-mapp
     restart: unless-stopped
