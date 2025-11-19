@@ -42,7 +42,7 @@ services:
     # environment:
     #   - MODS_PATH=/mods                    # Could have: katalog för mods/maps
     #   - ENABLE_MONITORING=true             # Could have: aktivera serverstatus-övervakning
-    # command: ["sh", "/config/start-server.sh"]  # Could have: custom start-skript
+    # command: ["sh", "/config/start-server.sh"] # Could have: custom start-skript
 
   # ----------------------
   # WireGuard VPN        #
