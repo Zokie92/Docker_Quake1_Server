@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  quake1:
+    image: gazliddon/qs
+    container_name: quake1_server
+    ports:
+      - '27510:27510/udp'
+      - '27511:27511/tcp'
+    volumes:
+      - ./id1:/id1
+    restart: unless-stopped
