@@ -40,3 +40,5 @@ services:
 networks:
   default:
     driver: bridge
+  wg_network:
+    driver: bridge  
