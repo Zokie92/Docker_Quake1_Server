@@ -2,7 +2,8 @@ Quake 1 Multiplayer Setup på Mac (M1) med Docker
 
 Översikt
 
-Denna guide dokumenterar hela processen för att få Quake 1 multiplayer att fungera på en Mac M1 med Docker. Den innehåller alla steg, felsökningar och lösningar vi gick igenom. Guiden täcker både server och klient.
+Denna guide dokumenterar hela processen för att få Quake 1 multiplayer att fungera på en Mac M1 med Docker. 
+Den innehåller alla steg, felsökningar och lösningar vi gick igenom. Guiden täcker både server och klient.
 
 ⸻
 
