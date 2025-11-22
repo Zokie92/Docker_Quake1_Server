@@ -1,7 +1,0 @@
-# Ignore Quake 1 game files
-id1/
-
-# Optional Docker artifacts
-*.log
-*.pid
-*.sock
