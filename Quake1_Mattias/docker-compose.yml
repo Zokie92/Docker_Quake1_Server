@@ -31,7 +31,7 @@ services:
       - TZ=Europe/Stockholm
       - SERVERURL=auto
       - SERVERPORT=51820
-      - PEERS=20
+      - PEERS=10
       - PEERDNS=1.1.1.1
     volumes:
       - ./wg-config:/config
